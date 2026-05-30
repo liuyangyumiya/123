@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="高橋優希" />    
+    <meta name="description" content="高橋優希" />
     <title>高橋優希</title>
     <style>
       body {
@@ -28,6 +28,7 @@
       }
       .flex1 {
         flex: 1;
+        min-width: 0;
       }
       .column {
         flex-direction: column;
@@ -40,6 +41,17 @@
       }
       .mgt8 {
         margin-top: 8px;
+      }
+      .line-clamp {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      .youqu {
+        flex: 0 0 10px;
+        min-width: 10px;
       }
       .daohang {
         padding: 10px 15px;
@@ -60,7 +72,8 @@
         }
         .youqu {
           margin-left: 8px;
-          flex:auto
+          flex: auto;
+          min-width: 0;
         }
         .shuju {
           margin: 0 0 8px;
@@ -112,14 +125,60 @@
           <!--数据区域-->
           <div class="flex shujuqu">
             <!--数据列表-->
-            <div style="height: 100px" class="shuju flex1 baise yinying mgr8"></div>
-            <div style="height: 100px" class="shuju flex1 baise yinying mgr8"></div>
-            <div style="height: 100px" class="shuju flex1 baise yinying mgr8"></div>
+            <div
+              style="height: 100px"
+              class="shuju flex1 baise yinying mgr8"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuju flex1 baise yinying mgr8"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuju flex1 baise yinying mgr8"
+            ></div>
             <div style="height: 100px" class="shuju flex1 baise yinying"></div>
           </div>
           <!--列表区域-->
           <div class="flex column">
             <!--列表xiangmu-->
+            <div
+              style="
+                height: 160px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px;
+              "
+              class="baise yinying mgt8"
+            >
+              <img
+                src="https://mhfm8tel.cdndm5.com/86/85013/20250627112958_180x240_23.jpg"
+                alt="クソ女に幸あれ"
+                style="width: 100px; height: 100%; object-fit: cover"
+              />
+              <div>
+                <p style="margin: 0 0 8px 0; font-weight: bold">
+                  《クソ女に幸あれ》
+                </p>
+                <p style="margin: 0; line-height: 1.4">
+                  多译名：《渣女没渣报》《让坏女孩幸福》
+                </p>
+                <p class="line-clamp" style="margin: 0; line-height: 1.4">
+                  在中学时代时，人生中第一次被女朋友狠狠甩掉的秋吉直。曾一度认为自己「再也不会再喜欢上谁了」，但在成为大学生的当下却被电影社团的一位学姐所吸引…。然而，就在这个时候，以前把自己甩掉的女朋友再次出现在眼前…！？身份交换×错综复杂的恋爱喜剧就此展开！！
+                </p>
+                <a
+                  href="https://www.manhuaren.com/manhua-zhanvmeizhabao/"
+                  target="_blank"
+                  style="
+                    color: #ef435aa8;
+                    display: flex;
+                    justify-content: center;
+                  "
+                  >相关链接</a
+                >
+              </div>
+            </div>
             <div style="height: 160px" class="baise yinying mgt8"></div>
             <div style="height: 160px" class="baise yinying mgt8"></div>
             <div style="height: 160px" class="baise yinying mgt8"></div>

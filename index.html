@@ -1,56 +1,141 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>高桥优希的小网站</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a new website</title>
     <style>
       body {
         margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .yinying {
+        box-shadow:
+          rgb(0 0 0 / 20%) 0px 1px 2px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px,
+          rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daohang {
+        padding: 10px 15px;
+        border-bottom: 1px solid #ef4343;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ef435aa8;
+      }
+      @media (max-width: 600px) {
+        .cebianlan {
+          display: none;
+        }
+        .neirongqu {
+          flex-direction: column;
+        }
+        .shujuqu {
+          flex-direction: column;
+        }
+        .youqu {
+          margin-left: 8px;
+          flex:auto
+        }
+        .shuju {
+          margin: 0 0 8px;
+        }
+        .flex {
+          flex-direction: column;
+        }
+        .daohang {
+          text-align: center;
+        }
+      }
+      .neirongqu::-webkit-scrollbar {
+        display: none;
       }
     </style>
   </head>
-  <body>
-    <div style="background-color: #f1f1f1; text-align: center; padding: 30px">
-      <img
-        src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUcBFqEbMnmmCbNVov_c79r_4EJE9TPwACGSAAAj_wkVSRsm9k1CZADDsE.png"
-        alt="code:002"
-        width="300px"
-      />
-    </div>
-    <div
-      style="
-        max-width: 700px;
-        margin: 30px auto;
-        padding: 15px;
-        line-height: 1.7;
-      "
-    >
-      <div style="font-size: 18px; font-weight: bold; margin-bottom: 20px">
-        这是 一个由高桥优希制作的小网站，主要用于展示一些图片和文字内容。希望大家喜欢这个小网站，并且能够从中获得一些有用的信息。
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 2" class="cebianlan yinying">
+      <!--头像栏-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #ef4343;
+        "
+        class="flex"
+      >
+        <img
+          src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUcBFqEbMnmmCbNVov_c79r_4EJE9TPwACGSAAAj_wkVSRsm9k1CZADDsE.png"
+          width="80"
+          height="80"
+          alt="头像"
+        />
+        <div style="margin-left: 10px">高橋優希</div>
       </div>
-      <p class="1">这个小网站的设计非常简单</p>
-      <p class="2">在这个小网站上</p>
-      <p class="3">你可以看到一些有趣的图片和文字内容</p>
-      <p class="4">希望这个小网站能够给你带来一些乐趣和启发</p>
+      <!--菜单栏-->
+      <div class="daohang">导航</div>
     </div>
-    <div
-      style="
-        background-color: lab(87.74% 3.08 1.09);
-        text-align: center;
-        padding: 30px;
-        font-size: 12px;
-      "
-    >
-      <div>
-        <a
-          href="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEUcBFqEbMnmmCbNVov_c79r_4EJE9TPwACGSAAAj_wkVSRsm9k1CZADDsE.png"
-          >图片下载</a
-        >
-      </div>
-
-      <div>
-        <a href="https://liuyangyumiya.github.io/123/2.html">下一页</a>
+    <!--主内容区-->
+    <div class="flex1 flex column">
+      <!--头部-->
+      <div style="height: 60px; z-index: 1" class="baise yinying"></div>
+      <!--内容区-->
+      <div style="overflow: auto" class="neirongqu flex1 flex">
+        <!--左侧内容区-->
+        <div style="flex: 3" class="flex column mg8">
+          <!--数据区域-->
+          <div class="flex shujuqu">
+            <!--数据列表-->
+            <div style="height: 100px" class="shuju flex1 baise yinying mgr8"></div>
+            <div style="height: 100px" class="shuju flex1 baise yinying mgr8"></div>
+            <div style="height: 100px" class="shuju flex1 baise yinying mgr8"></div>
+            <div style="height: 100px" class="shuju flex1 baise yinying"></div>
+          </div>
+          <!--列表区域-->
+          <div class="flex column">
+            <!--列表xiangmu-->
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+            <div style="height: 160px" class="baise yinying mgt8"></div>
+          </div>
+        </div>
+        <!--右侧内容区-->
+        <div style="flex: 1" class="youqu flex column mgr8 mgt8">
+          <!--提示区域-->
+          <div style="height: 150px" class="baise yinying"></div>
+          <!--消息区域-->
+          <div style="height: 300px" class="baise yinying mgt8"></div>
+        </div>
       </div>
     </div>
   </body>
